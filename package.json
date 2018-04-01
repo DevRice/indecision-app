@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack",
+    "serve": "live-server public/",
+    "build": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
-    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
-    "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "heroku-postbuild": "yarn run build:prod",
+    "dev-server": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
